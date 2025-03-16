@@ -57,7 +57,18 @@ I have implemented multiprocessing but it still can take hours on high end hardw
 Go the the bottom of the `ray-tracer.py` script and create your desired scene.
 Each object in your scene is defined as a python object:
 ```python
-example_object = Object("left_wall", "cube", (-4,0,0), (0,0,0), 2, (1,0,0), 1, 1, 0, False)
+example_object = Object(
+  "object_name", # name of the object
+  "cube", # mesh type, can be found in the objects/ folder
+  (-4,0,0), # x,y,z translation
+  (0,0,0), # x,y,z rotation
+  2, # scale factor
+  (1,0,0), # r,g,b color value
+  1, # albedo
+  1, # roughness
+  0, # emission
+  False # smooth shading or not
+)
 ```
 
 
