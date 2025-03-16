@@ -53,7 +53,8 @@ I have implemented multiprocessing but it still can take hours on high end hardw
 
 ### Export Mesh from Blender
 If you want to render a custom mesh you firs tneed to export it to json.
-The 3D-Modeling programm of my choice is `Blender` which is free and open source.
+The 3D-Modeling programm of my choice is [Blender](https://www.blender.org/) which is free and open source.
+
 Open Blender and go to `Scripting` and add the `blender-export-mesh.py` script.
 Change the Variables to your liking and add the directory to which you want to export to.
 
