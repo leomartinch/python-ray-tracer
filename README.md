@@ -46,9 +46,28 @@ pip install tqdm
 Try same as for Windows.
 
 
+
+
 ## Usage
 Because of the computationally heavy task of ray tracing and the slow nature of python, the image will take a while to render.
 I have implemented multiprocessing but it still can take hours on high end hardware.
+
+
+### Configure Scene
+Go the the bottom of the `ray-tracer.py` script and create your desired scene.
+Each object in your scene is defined as a python object:
+```python
+example_object = Object("left_wall", "cube", (-4,0,0), (0,0,0), 2, (1,0,0), 1, 1, 0, False)
+```
+
+
+### Render Image
+Open your terminal and run the ray tracer with python
+```sh
+python ray-tracer.py
+```
+
+
 
 
 ### Export Mesh from Blender
