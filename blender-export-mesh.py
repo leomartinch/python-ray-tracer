@@ -32,7 +32,7 @@ def get_triangles_and_vertices(mesh_name):
 ### VARIABLES ###
 
 blender_mesh_name = "Sphere" # name of the mesh you want to export
-file_location = "C:/Users/leopm/Downloads" # location where you want to export the file
+file_location = "C:/Users/randy/Downloads" # location where you want to export the file
 export_file_name = "sphere" # name of the exported file
 
 """IMPORTANT: Traingulate the mesh before exporting"""
