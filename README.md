@@ -7,7 +7,7 @@ It was created for a school project.
 - Path tracing
 - Smooth Shading
 - Material smoothnes
-- Export meshes from `blender` to JSON, for rendering in the ray tracer
+- Export meshes from [Blender](https://www.blender.org/) to JSON, for rendering in the ray tracer
 - Transform Meshes (Location, Rotation and Scale)
   - Create Scene by adding multiple objects with color and transformations
 - Camera field of view
@@ -24,6 +24,7 @@ cd python-ray-tracer/
 ```
 
 Install `tqdm` in your distribution of choice.
+
 Arch Linux:
 ```sh
 sudo pacman -S python-tqdm
@@ -40,6 +41,9 @@ Install `tqdm` for the progress meter
 ```
 pip install tqdm
 ```
+
+### Mac (Not Tested!)
+Try same as for Windows.
 
 
 ## Usage
