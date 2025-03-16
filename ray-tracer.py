@@ -5,7 +5,7 @@ import multiprocessing
 from tqdm import tqdm
 
 """RAY TRACER"""
-"""Leo Martin 2025"""
+"""Leo Martin (2025)"""
 
 
 ### VECTOR-FUNCTIONS ###
@@ -192,7 +192,6 @@ def ray_intersects_box(ray_origin, ray_direction, bounding_box):
     t_min = float('-inf')
     t_max = float('inf')
 
-    """Nicht mein Code"""
     for i in range(3): # loop through x, y, z axes
         if abs(ray_direction[i]) < 1e-9:  # ray is parallel to this axis
             if ray_origin[i] < cube_min[i] or ray_origin[i] > cube_max[i]:
@@ -274,7 +273,6 @@ def get_diffuse_direction(normal):
     r1 = random.random()
     r2 = random.random()
 
-    """Nicht mein Code"""
     phi = 2 * math.pi * r2
     
     x = math.cos(phi) * math.sqrt(1 - r1)
@@ -488,7 +486,7 @@ def transform_mesh(vertices, translation, rotation, scale):
     return new_vertices
 
 
-def get_vertex_normals(vertices, mesh):
+def get_vertex_normals(vertices, mesh): # get the normals for the vertex points (combination of vertex normal of the three surounding faces)
     vertex_normals = [(0, 0, 0)] * len(vertices)
     for triangle in mesh:
         edge_1 = subtract(vertices[triangle[1]], vertices[triangle[0]])
@@ -527,8 +525,8 @@ class Object:
 
 ### VARIABLES ###
 
-camera_yaw = 0 # können noch nicht benutzt werden
-camera_pitch = 0 # können noch nicht benutzt werden
+camera_yaw = 0 # not implemented yet
+camera_pitch = 0 # not implemented yet
 camera_location = (0,-3,0)
 field_of_view = 70
 
@@ -549,7 +547,7 @@ right_wall = Object("right_wall", "cube", (4,0,0), (0,0,0), 2, (0,0,1), 1, 1, 0,
 bottom_wall = Object("bottom_wall", "cube", (0,0,-4), (0,0,0), 2, (0,1,0), 1, 1, 0, False)
 top_wall = Object("top_wall", "cube", (0,0,4), (0,0,0), 2, (1,1,1), 1, 1, 1, False)
 back_wall = Object("back_wall", "cube", (0,4,0), (0,0,0), 2, (1,1,1), 1, 1, 0, False)
-monke = Object("monke", "monke", (0,0,0), (0,0,0), 0.75, (1,1,1), 1, 0.5, 0, True)
+monke = Object("monke", "monke", (0,0,0), (0,0,0), 0.75, (1,1,1), 1, 1, 0, True)
 
 scene = {
     "left_wall": left_wall,
