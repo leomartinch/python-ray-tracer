@@ -533,7 +533,7 @@ image_resolution = 100 # width in pixels
 samples = 10
 max_bounces = 3
 
-# define objects and scene
+# define objects in scene
 # "name, mesh-type, translation, rotation, scale, color, albedo, roughness, emission, smooth-shading"
 left_wall = Object("left_wall", "cube", (-4,0,0), (0,0,0), 2, (1,0,0), 1, 1, 0, False)
 right_wall = Object("right_wall", "cube", (4,0,0), (0,0,0), 2, (0,0,1), 1, 1, 0, False)
