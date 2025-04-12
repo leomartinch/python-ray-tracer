@@ -5,8 +5,7 @@ It was created as a school project.
 
 ## Features
 - Path tracing
-- Smooth Shading
-- Material smoothness
+- Smooth shading
 - Export meshes from [Blender](https://www.blender.org/) to JSON for rendering in the ray tracer
 - Transform meshes (location, rotation and scale)
   - Create Scene by adding multiple objects with color and transformations
