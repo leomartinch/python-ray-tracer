@@ -6,7 +6,6 @@ import json
 
 
 ### FUNCTION ###
-
 def get_triangles_and_vertices(mesh_name):
     obj = bpy.data.objects.get(mesh_name) # get the blender object
 
@@ -30,7 +29,6 @@ def get_triangles_and_vertices(mesh_name):
 
 
 ### VARIABLES ###
-
 blender_mesh_name = "Sphere" # name of the mesh you want to export
 file_location = "C:/Users/randy/Downloads" # location where you want to export the file
 export_file_name = "sphere" # name of the exported file
@@ -39,7 +37,6 @@ export_file_name = "sphere" # name of the exported file
 
 
 ### SCRIPT ###
-
 data = {}
 get_triangles_and_vertices(blender_mesh_name)
 
